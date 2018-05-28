@@ -98,15 +98,9 @@ dkms.conf
 
 
 # Xcode
-
 .DS_Store
 build/
 *.xcodeproj/
 
 # Pods - for those of you who use CocoaPods
 # Pods
-
-
-
-# Git
-.git
