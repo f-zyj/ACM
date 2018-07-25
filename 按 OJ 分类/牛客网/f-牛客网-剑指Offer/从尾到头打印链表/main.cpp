@@ -28,11 +28,20 @@ public:
     vector<int> printListFromTailToHead(ListNode *head)
     {
         vector<int> vi;
-        while (head != nullptr)
+        
+        if (head != nullptr)
         {
             vi.push_back(head->val);
-            head = head->next;
+            while (head->next != nullptr)
+            {
+                head = head->next;
+                vi.push_back(head->val);
+            }
         }
+        
+        reverse(vi.begin(), vi.end());
+        
+        return vi;
     }
 };
 
